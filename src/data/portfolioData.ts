@@ -33,6 +33,7 @@ export interface Education {
   institution: string
   period: string
   cgpa: string
+  image?: string
 }
 
 export const personalInfo: PersonalInfo = {
@@ -120,12 +121,14 @@ export const education: Education[] = [
     institution: 'Manipal University, Jaipur',
     period: '2022 – 2024',
     cgpa: 'CGPA: 7.76',
+    image: '/assets/manipal-university.jpg',
   },
   {
     degree: 'B.Sc Computer Science',
     institution: 'IIMT University, Meerut',
     period: '2019 – 2022',
     cgpa: 'CGPA: 8.3',
+    image: '/assets/iimt-university.jpg',
   },
 ]
 
