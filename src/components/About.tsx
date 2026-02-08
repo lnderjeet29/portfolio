@@ -63,11 +63,9 @@ const About = () => {
               >
                 <div className="relative w-full max-w-sm">
                   <motion.div
-                    className="bg-dark-card rounded-2xl p-6 border border-accent-primary/20 shadow-2xl"
+                    className=""
                     whileHover={{ 
                       scale: 1.05,
-                      borderColor: 'rgba(0, 217, 255, 0.5)',
-                      boxShadow: '0 0 30px rgba(0, 217, 255, 0.3)'
                     }}
                     transition={{ duration: 0.3 }}
                   >
@@ -78,19 +76,6 @@ const About = () => {
                       autoplay={true}
                     />
                   </motion.div>
-                  {/* Glow effect */}
-                  <motion.div
-                    className="absolute inset-0 bg-accent-primary/10 rounded-2xl blur-2xl -z-10"
-                    animate={{
-                      scale: [1, 1.2, 1],
-                      opacity: [0.3, 0.5, 0.3],
-                    }}
-                    transition={{
-                      duration: 3,
-                      repeat: Infinity,
-                      ease: "easeInOut"
-                    }}
-                  />
                 </div>
               </motion.div>
 
