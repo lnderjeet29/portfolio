@@ -3,6 +3,8 @@ import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'
 import { personalInfo } from '../data/portfolioData'
 import TypingEffect from './TypingEffect'
 import CodeParticles from './CodeParticles'
+import RoboticCharacter from './RoboticCharacter'
+import BackendVisualization from './BackendVisualization'
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -50,6 +52,31 @@ const Hero = () => {
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center section-padding pt-32 relative overflow-hidden">
       <CodeParticles />
+      
+      {/* Robotic Character - Desktop Only */}
+      <motion.div
+        className="hidden lg:block absolute left-10 xl:left-20 top-1/2 transform -translate-y-1/2 w-64 h-64 z-0"
+        initial={{ opacity: 0, x: -100, scale: 0.5 }}
+        animate={{ opacity: 1, x: 0, scale: 1 }}
+        transition={{ duration: 1, delay: 0.5, type: "spring" }}
+        whileHover={{ scale: 1.1 }}
+      >
+        <RoboticCharacter />
+      </motion.div>
+
+      {/* Backend Visualization - Desktop Only */}
+      <motion.div
+        className="hidden lg:block absolute right-10 xl:right-20 top-1/2 transform -translate-y-1/2 w-64 h-64 z-0"
+        initial={{ opacity: 0, x: 100, scale: 0.5 }}
+        animate={{ opacity: 1, x: 0, scale: 1 }}
+        transition={{ duration: 1, delay: 0.7, type: "spring" }}
+        whileHover={{ scale: 1.1 }}
+      >
+        <div className="bg-dark-card/50 backdrop-blur-sm rounded-2xl p-6 border border-accent-primary/20">
+          <BackendVisualization />
+        </div>
+      </motion.div>
+
       <motion.div
         variants={containerVariants}
         initial="hidden"
