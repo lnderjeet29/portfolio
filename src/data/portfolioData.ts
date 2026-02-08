@@ -40,7 +40,7 @@ export const personalInfo: PersonalInfo = {
   name: 'Inderjeet Yadav',
   location: 'Meerut, Uttar Pradesh',
   phone: '+91 7037314662',
-  email: 'inderjeet-yadav@hcltech.com',
+  email: 'inderjeetdev33@gmail.com',
   linkedin: 'https://www.linkedin.com/in/inderjeetdev/',
   github: 'https://github.com/lnderjeet29',
 }
