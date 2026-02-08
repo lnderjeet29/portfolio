@@ -72,8 +72,8 @@ const About = () => {
                     transition={{ duration: 0.3 }}
                   >
                     <LottieAnimation
-                      animationPath="/assets/Live chatbot.lottie"
-                      className="w-full h-auto"
+                      animationPath="/assets/Live-chatbot.json"
+                      className="w-full h-auto min-h-[300px]"
                       loop={true}
                       autoplay={true}
                     />
