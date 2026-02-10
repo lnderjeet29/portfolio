@@ -13,7 +13,7 @@ import {
   SiPostman,
   SiGit,
 } from 'react-icons/si'
-import { FaCode } from 'react-icons/fa'
+import { FaCode, FaDatabase, FaRobot } from 'react-icons/fa'
 
 const Skills = () => {
   const iconMap: { [key: string]: any } = {
@@ -31,6 +31,14 @@ const Skills = () => {
     'Rest Assured': SiPostman,
     Postman: SiPostman,
     Git: SiGit,
+    Redis: FaDatabase,
+    'ELK Stack (Elasticsearch, Logstash, Kibana)': FaDatabase,
+    'Cursor (AI-assisted IDE)': FaCode,
+    ChatGPT: FaRobot,
+    Claude: FaRobot,
+    Timefold: FaRobot,
+    ElevenLabs: FaRobot,
+    Knowlarity: FaRobot,
   }
 
   const containerVariants = {

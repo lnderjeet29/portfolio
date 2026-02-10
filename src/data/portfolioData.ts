@@ -99,15 +99,33 @@ export const skills: SkillCategory[] = [
   },
   {
     category: 'Cloud/DevOps',
-    skills: ['AWS (EC2, S3, RDS, Lambda, ECS Fargate, CodeBuild)', 'Docker', 'Jenkins', 'GitHub Actions', 'Maven'],
+    skills: [
+      'AWS (EC2, S3, RDS, Lambda, ECS Fargate, CodeBuild)',
+      'Docker',
+      'Jenkins',
+      'GitHub Actions',
+      'Maven',
+      'ELK Stack (Elasticsearch, Logstash, Kibana)',
+    ],
   },
   {
     category: 'Databases',
-    skills: ['PostgreSQL', 'MySQL'],
+    skills: ['PostgreSQL', 'MySQL', 'Redis'],
   },
   {
     category: 'Testing/Tools',
-    skills: ['JUnit', 'Rest Assured', 'Postman', 'Git', 'Cursor (AI-assisted IDE)'],
+    skills: ['JUnit', 'Rest Assured', 'Postman', 'Git'],
+  },
+  {
+    category: 'AI & Automation Tools',
+    skills: [
+      'Cursor (AI-assisted IDE)',
+      'ChatGPT',
+      'Claude',
+      'Timefold',
+      'ElevenLabs',
+      'Knowlarity',
+    ],
   },
   {
     category: 'Concepts',
